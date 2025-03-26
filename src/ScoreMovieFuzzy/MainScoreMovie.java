@@ -5,6 +5,7 @@ import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.io.IOException;
 import java.util.*;
+import java.nio.file.Paths;
 
 public class MainScoreMovie {
 	public static void main(String[] args) {
@@ -28,7 +29,8 @@ public class MainScoreMovie {
 			grupoAtratividade.add(new VariavelFuzzy("TalvezAssistir",5,7,8,10));
 			grupoAtratividade.add(new VariavelFuzzy("Assistir",7,9,10,10));
 			
-	        BufferedReader bfr = new BufferedReader(new FileReader("C:\\\\Users\\\\joasr\\\\eclipse-workspace\\\\ScoreMovieFuzzy\\\\src\\\\ScoreMovieFuzzy\\\\movie_dataset.txt"));
+			String caminhoArquivo = Paths.get("").toAbsolutePath().toString() + "\\src\\ScoreMovieFuzzy\\movie_dataset.txt";
+	        BufferedReader bfr = new BufferedReader(new FileReader(caminhoArquivo));
 	        
 	        String line = "";
 			
