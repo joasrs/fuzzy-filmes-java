@@ -1,0 +1,26 @@
+# Ignorar arquivos do Eclipse
+.metadata/
+.classpath
+.project
+.settings/
+
+# Ignorar arquivos de compilação
+bin/
+out/
+target/
+*.class
+*.war
+*.jar
+
+# Ignorar dependências baixadas pelo Maven e Gradle
+.m2/
+.gradle/
+build/
+
+# Ignorar logs e arquivos temporários
+*.log
+*.tmp
+
+# Ignorar configurações do sistema operacional
+.DS_Store
+Thumbs.db
